@@ -1,22 +1,16 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+title : wed_20180919_1
+layout : post
+tags : [NLP_General]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>The Hitchhiker's Guide to Testing Statistical Significance in Natural Language Processing (ACL 2018) </h3>
 
-Jekyll also offers powerful support for code snippets:
 
-```python
-def print_hi(name):
-  print("hello", name)
-print_hi('Tom')
-```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<p><b>Rotem Dror, Gili Baumer, Segev Shlomov, Roi Reichart</b><br/>
+Faculty of Industrial Engineering and Management, Technion, IIT <br/>
+<em>{rtmdrr@campus|sgbaumer@campus|segevs@campus|roiri}.technion.ac.il</em> </p>
+<hr />
+<p>
+NLP에서의 significance test의 역할에 대해 논하고, nlp 연구에서 significance test 를 수행하는데 실험적 세팅과 evaluation measure 가 어떻게 영향을 미치는지 알려준다. 이것을 바탕으로 NLP 연구에 따라 significance test 를 선택하는 프로토콜을 제안하고 이에 맞추어 최근의 NLP 연구들을 살펴본다. 결과적으로 최근 연구의 결과와 significance test 결과가 일치하지 않음을 확인할 수 있었다
+</p>

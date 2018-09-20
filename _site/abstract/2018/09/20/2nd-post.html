@@ -6,15 +6,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 -->
 <html><head><!-- Robots -->
-  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/" /><!-- Title, description, author --><title>Cover | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/abstract/2018/09/20/2nd-post.html" /><!-- Title, description, author --><title>thu_20180920_2 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
   <meta name="description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
   <meta name="author" content="Heesoo Harper Park" />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Cover | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
+  <meta property="og:title" content="thu_20180920_2 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://localhost:4000/assets/images/avatar.jpg" />
-  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:url" content="http://localhost:4000/abstract/2018/09/20/2nd-post.html" />
   <meta property="og:site_name" content="희수의 연구 노트" />
   <meta property="og:description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
   
@@ -47,7 +47,7 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
   </a>
 </div><!-- Nav -->
 <nav id="nav">
-  <ul><li><a href="#" id="cover" class="active">
+  <ul><li><a href="http://localhost:4000/" id="cover-link">
             <span class="icon fa-home">Cover</span>
           </a></li><li><a href="http://localhost:4000/blog1.html" id="논문-abstract-읽기-link">
             <span class="icon fa-pencil-alt">논문 Abstract 읽기</span>
@@ -55,22 +55,37 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
             <span class="icon fa-book">논문 분석</span>
           </a></li><li><a href="http://localhost:4000/blog3.html" id="word-embedding-evaluation-dataset-link">
             <span class="icon fa-book">Word Embedding Evaluation Dataset</span>
-          </a></li><hr><li><a href="#intro" id="intro-link" class="scrolly"><span class="icon fa-comment">Intro</span></a></li></ul>
+          </a></li></ul>
 </nav></div>
   <div class="bottom"><!-- Social Icons -->
 <ul class="icons"><li><a href="mailto:er2357@naver.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
 </div>
 </div>
 <!-- Main -->
-<div id="main"><!-- Sections --><section id="intro" class="shade-one cover dark">
-  <div class="container"><img src="/assets/images/banner.jpg" alt="example cover photo" class="back"><header>
-  <h2 class="alt">이 곳은 공부한 것을 기록하고 정리하는 공간입니다.<br />
-</header>
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>thu_20180920_2</h2>
+				<p>20 September 2018</p>
+			</header><h3> Neural Machine Translation By Jointly Learning to Align and Translate (ICLR 2015) </h3>
 
-<footer>
-</footer>
+<p><b>Dzmitry Bahdanau</b> <br />
+Jacobs University Bremen, Germany<br />
+
+<b>KyungHyun Cho Yoshua Bengio</b> <br />
+Universite de Montr´eal <br />
+
+</p>
+
+<hr />
+
+<p>
+기존 NMT 에서 decoder는 fixed length vector 를 생성해냈다. 이 논문에서는 이러한 기존의 방법이 성능향상을 저해하는 요인이라는 것을 보이고 자동으로 source sentence 에서 target에 관련된 부분을 추출하도록 하였다. (Attention)
+</p>
 </div>
-</section>
+	</article>
 </div><!-- Footer -->
 <div id="footer">
   

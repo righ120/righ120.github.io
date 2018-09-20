@@ -6,15 +6,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 -->
 <html><head><!-- Robots -->
-  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/abstract/2018/09/17/fourth-post.html" /><!-- Title, description, author --><title>mon_20180917_4 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/abstract/2018/09/20/1st-post.html" /><!-- Title, description, author --><title>thu_20180920_1 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
   <meta name="description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
   <meta name="author" content="Heesoo Harper Park" />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="mon_20180917_4 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
+  <meta property="og:title" content="thu_20180920_1 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://localhost:4000/assets/images/avatar.jpg" />
-  <meta property="og:url" content="http://localhost:4000/abstract/2018/09/17/fourth-post.html" />
+  <meta property="og:url" content="http://localhost:4000/abstract/2018/09/20/1st-post.html" />
   <meta property="og:site_name" content="희수의 연구 노트" />
   <meta property="og:description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
   
@@ -67,21 +67,29 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 	<article class="shade-two">
 	  <div class="container">
 			<header>
-				<h2>mon_20180917_4</h2>
-				<p>17 September 2018</p>
-			</header><h3>On Accurate Evaluation of GANs for Language Generation (arxiv 2018)</h3>
+				<h2>thu_20180920_1</h2>
+				<p>20 September 2018</p>
+			</header><h3> Layer Normalization (arXive 2016) </h3>
 
-<p>
-<b>Stanislau Semeniuta<sup>1</sup> Aliaksei Severyn<sup>2</sup> Sylvain Gelly<sup>2</sup></b><br />
-<sup>1</sup>Universität zu Lübeck, Institut für Neuro- und Bioinformatik <br />
-<em>stas@inb.uni-luebeck.de </em>
-<sup>2</sup>Google AI <br />
-<em>{severyn,sylvaingelly}@google.com </em></p>
+<p><b>Jimmy Lei Ba</b> <br />
+University of Toronto <br />
+<em>jimmy@psi.toronto.edu</em> <br />
+
+<b>Jamie Ryan Kiros </b> <br />
+University of Toronto <br />
+<em>rkiros@cs.toronto.edu</em> <br />
+
+<b>Geoffrey E. Hinton</b>
+University of Toronto<br />
+and Google Inc.<br />
+<em>hinton@cs.toronto.edu</em><br />
+
+</p>
 
 <hr />
 
 <p>
- n-gram 기반으로 모델의 성능을 측정하는 BLUE score 는 GAN 의 성능을 잘 측정할 수 없다. 오히려 전통적인 Language Model(LM)이 GAN의 성능을 더 잘 반영하는 것을 실험적으로 확인함...
+기존 batch normalization은 mini batch size 에 의존적이며 RNN에 어떻게 적용할지 명확하지 않다. 이 논문에서는 batch normalization 을 변형하여 한 개의 training case 에서 한 layer 의 모든 input 을 sum 하여 normalization 한다. 각각의 neuron 은 모두 bias와 gain을  따로 가지고 이는 non-linearity 이전에 적용이 된다. Batch normalization 과 달리 training 과 test 상의 차이가 없으며 각각의 time step 마다 따로 적용되므로 RNN에의 적용에도 적합하다.
 </p>
 </div>
 	</article>

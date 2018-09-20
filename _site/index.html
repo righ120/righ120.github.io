@@ -6,12 +6,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 -->
 <html><head><!-- Robots -->
-  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/" /><!-- Title, description, author --><title>Cover | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/" /><!-- Title, description, author --><title>논문 Abstract 읽기 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
   <meta name="description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
   <meta name="author" content="Heesoo Harper Park" />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Cover | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
+  <meta property="og:title" content="논문 Abstract 읽기 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://localhost:4000/assets/images/avatar.jpg" />
   <meta property="og:url" content="http://localhost:4000/" />
@@ -47,31 +47,189 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
   </a>
 </div><!-- Nav -->
 <nav id="nav">
-  <ul><li><a href="#" id="cover" class="active">
-            <span class="icon fa-home">Cover</span>
-          </a></li><li><a href="http://localhost:4000/blog1.html" id="논문-abstract-읽기-link">
+  <ul><li><a href="#" id="논문-abstract-읽기" class="active">
             <span class="icon fa-pencil-alt">논문 Abstract 읽기</span>
-          </a></li><li><a href="http://localhost:4000/blog2.html" id="논문-분석-link">
+          </a></li><li><a href="http://localhost:4000/blog1.html" id="논문-분석-link">
             <span class="icon fa-book">논문 분석</span>
-          </a></li><li><a href="http://localhost:4000/blog3.html" id="word-embedding-evaluation-dataset-link">
-            <span class="icon fa-book">Word Embedding Evaluation Dataset</span>
-          </a></li><hr><li><a href="#intro" id="intro-link" class="scrolly"><span class="icon fa-comment">Intro</span></a></li></ul>
+          </a></li><li><a href="http://localhost:4000/blog2.html" id="dataset-link">
+            <span class="icon fa-book">Dataset</span>
+          </a></li><hr><li><a href="#thu-20180920-1" id="thu-20180920-1-link" class="scrolly"><span class="icon fa-file">thu_20180920_1</span></a></li><li><a href="#thu-20180920-2" id="thu-20180920-2-link" class="scrolly"><span class="icon fa-file">thu_20180920_2</span></a></li><li><a href="#thu-20180920-3" id="thu-20180920-3-link" class="scrolly"><span class="icon fa-file">thu_20180920_3</span></a></li><li><a href="#thu-20180920-4" id="thu-20180920-4-link" class="scrolly"><span class="icon fa-file">thu_20180920_4</span></a></li><li><a href="#thu-20180920-5" id="thu-20180920-5-link" class="scrolly"><span class="icon fa-file">thu_20180920_5</span></a></li><li><a href="#wed-20180919-1" id="wed-20180919-1-link" class="scrolly"><span class="icon fa-file">wed_20180919_1</span></a></li><li><a href="#wed-20180919-2" id="wed-20180919-2-link" class="scrolly"><span class="icon fa-file">wed_20180919_2</span></a></li><li><a href="#wed-20180919-3" id="wed-20180919-3-link" class="scrolly"><span class="icon fa-file">wed_20180919_3</span></a></li><li><a href="#tue-20180918-1" id="tue-20180918-1-link" class="scrolly"><span class="icon fa-file">tue_20180918_1</span></a></li><li><a href="#tue-20180918-2" id="tue-20180918-2-link" class="scrolly"><span class="icon fa-file">tue_20180918_2</span></a></li><li><a href="#tue-20180918-3" id="tue-20180918-3-link" class="scrolly"><span class="icon fa-file">tue_20180918_3</span></a></li><li><a href="#mon-20180917-1" id="mon-20180917-1-link" class="scrolly"><span class="icon fa-file">mon_20180917_1</span></a></li><li><a href="#mon-20180917-2" id="mon-20180917-2-link" class="scrolly"><span class="icon fa-file">mon_20180917_2</span></a></li><li><a href="#mon-20180917-3" id="mon-20180917-3-link" class="scrolly"><span class="icon fa-file">mon_20180917_3</span></a></li><li><a href="#mon-20180917-4" id="mon-20180917-4-link" class="scrolly"><span class="icon fa-file">mon_20180917_4</span></a></li><li><a href="#mon-20180917-5" id="mon-20180917-5-link" class="scrolly"><span class="icon fa-file">mon_20180917_5</span></a></li><li><a href="#fri-20180914-1" id="fri-20180914-1-link" class="scrolly"><span class="icon fa-file">fri_20180914_1</span></a></li><li><a href="#fri-20180914-2" id="fri-20180914-2-link" class="scrolly"><span class="icon fa-file">fri_20180914_2</span></a></li><li><a href="#fri-20180914-3" id="fri-20180914-3-link" class="scrolly"><span class="icon fa-file">fri_20180914_3</span></a></li><li><a href="#thu-20180913-1" id="thu-20180913-1-link" class="scrolly"><span class="icon fa-file">thu_20180913_1</span></a></li><li><a href="#thu-20180913-2" id="thu-20180913-2-link" class="scrolly"><span class="icon fa-file">thu_20180913_2</span></a></li><li><a href="#thu-20180913-3" id="thu-20180913-3-link" class="scrolly"><span class="icon fa-file">thu_20180913_3</span></a></li><li><a href="#wed-20180912-1" id="wed-20180912-1-link" class="scrolly"><span class="icon fa-file">wed_20180912_1</span></a></li><li><a href="#wed-20180912-2" id="wed-20180912-2-link" class="scrolly"><span class="icon fa-file">wed_20180912_2</span></a></li><li><a href="#wed-20180912-3" id="wed-20180912-3-link" class="scrolly"><span class="icon fa-file">wed_20180912_3</span></a></li><li><a href="#tue-20180911-1" id="tue-20180911-1-link" class="scrolly"><span class="icon fa-file">tue_20180911_1</span></a></li><li><a href="#tue-20180911-2" id="tue-20180911-2-link" class="scrolly"><span class="icon fa-file">tue_20180911_2</span></a></li><li><a href="#tue-20180911-3" id="tue-20180911-3-link" class="scrolly"><span class="icon fa-file">tue_20180911_3</span></a></li></ul>
 </nav></div>
   <div class="bottom"><!-- Social Icons -->
 <ul class="icons"><li><a href="mailto:er2357@naver.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
 </div>
 </div>
 <!-- Main -->
-<div id="main"><!-- Sections --><section id="intro" class="shade-one cover dark">
-  <div class="container"><img src="/assets/images/banner.jpg" alt="example cover photo" class="back"><header>
-  <h2 class="alt">이 곳은 공부한 것을 기록하고 정리하는 공간입니다.<br />
-</header>
+<div id="main"><!-- Posts List --><section id="thu-20180920-1" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/20/1st-post.html">thu_20180920_1</a></h2><p>20 September 2018</p></header><p> Layer Normalization (arXive 2016) 
 
-<footer>
-</footer>
-</div>
+</p><a href="http://localhost:4000/abstract/2018/09/20/1st-post.html">read more</a></div>
 </section>
-</div><!-- Footer -->
+<section id="thu-20180920-2" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/20/2nd-post.html">thu_20180920_2</a></h2><p>20 September 2018</p></header><p> Neural Machine Translation By Jointly Learning to Align and Translate (ICLR 2015) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/20/2nd-post.html">read more</a></div>
+</section>
+<section id="thu-20180920-3" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/20/3rd-post.html">thu_20180920_3</a></h2><p>20 September 2018</p></header><p>Are BLEU and Meaning Representation in Opposition? (ACL 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/20/3rd-post.html">read more</a></div>
+</section>
+<section id="thu-20180920-4" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/20/4th-post.html">thu_20180920_4</a></h2><p>20 September 2018</p></header><p>How Much Attention Do You Need? A Granular Analysis of Neural Machine Translation Architectures (ACL 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/20/4th-post.html">read more</a></div>
+</section>
+<section id="thu-20180920-5" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/20/5th-post.html">thu_20180920_5</a></h2><p>20 September 2018</p></header><p>The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation (ACL 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/20/5th-post.html">read more</a></div>
+</section>
+<section id="wed-20180919-1" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/19/first-post.html">wed_20180919_1</a></h2><p>19 September 2018</p></header><p>The Hitchhiker's Guide to Testing Statistical Significance in Natural Language Processing (ACL 2018) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/19/first-post.html">read more</a></div>
+</section>
+<section id="wed-20180919-2" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/19/second-post.html">wed_20180919_2</a></h2><p>19 September 2018</p></header><p> Mem2Seq: Effective Incorporationg Knowledge Bases into End-to-End Task-Oriented Dialog Systems (ACL 2018) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/19/second-post.html">read more</a></div>
+</section>
+<section id="wed-20180919-3" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/19/third-post.html">wed_20180919_3</a></h2><p>19 September 2018</p></header><p> A Spatial Model for Extracting and Visualizing Latent Discourse Structure in Text (ACL 2018) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/19/third-post.html">read more</a></div>
+</section>
+<section id="tue-20180918-1" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/18/first-post.html">tue_20180918_1</a></h2><p>18 September 2018</p></header><p>Exemplar Encoder-Decoder for Neural Conversation Generation (ACL 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/18/first-post.html">read more</a></div>
+</section>
+<section id="tue-20180918-2" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/18/second-post.html">tue_20180918_2</a></h2><p>18 September 2018</p></header><p>Sparse and Constrained Attention for Neural Machine Translation (ACL 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/18/second-post.html">read more</a></div>
+</section>
+<section id="tue-20180918-3" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/18/third-post.html">tue_20180918_3</a></h2><p>18 September 2018</p></header><p>An Exploration of Word Embedding Initialization in Deep-Learning Tasks (ArXiv 2017)
+
+</p><a href="http://localhost:4000/abstract/2018/09/18/third-post.html">read more</a></div>
+</section>
+<section id="mon-20180917-1" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/17/1st-post.html">mon_20180917_1</a></h2><p>17 September 2018</p></header><p>Traversal-Free Word Vector Evaluation in Anlogy Space (EMNLP 2017)
+
+</p><a href="http://localhost:4000/abstract/2018/09/17/1st-post.html">read more</a></div>
+</section>
+<section id="mon-20180917-2" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/17/2nd-post.html">mon_20180917_2</a></h2><p>17 September 2018</p></header><p>Linguistic Regularities in Sparse and Explicit Word Representations (CoNLL 2014)
+
+</p><a href="http://localhost:4000/abstract/2018/09/17/2nd-post.html">read more</a></div>
+</section>
+<section id="mon-20180917-3" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/17/3rd-post.html">mon_20180917_3</a></h2><p>17 September 2018</p></header><p>On the Limitations of Unsupervised Bilingual Dictionary Induction (ACL 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/17/3rd-post.html">read more</a></div>
+</section>
+<section id="mon-20180917-4" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/17/4th-post.html">mon_20180917_4</a></h2><p>17 September 2018</p></header><p>On Accurate Evaluation of GANs for Language Generation (arxiv 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/17/4th-post.html">read more</a></div>
+</section>
+<section id="mon-20180917-5" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/17/5th-post.html">mon_20180917_5</a></h2><p>17 September 2018</p></header><p>Should I Follow the Crowd? A Probabilistic Analysis of the Effectiveness of Popularity in Recommender Systems (SIGIR 2018))
+
+</p><a href="http://localhost:4000/abstract/2018/09/17/5th-post.html">read more</a></div>
+</section>
+<section id="fri-20180914-1" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/14/first-post.html">fri_20180914_1</a></h2><p>14 September 2018</p></header><p> DCN+: Mixed Objective And Deep Residual Coattention for Question Answering (ICLR 2018) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/14/first-post.html">read more</a></div>
+</section>
+<section id="fri-20180914-2" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/14/second-post.html">fri_20180914_2</a></h2><p>14 September 2018</p></header><p> A Deep Reinforced Model for Abstractive Summarization (ICLR 2018)
+
+</p><a href="http://localhost:4000/abstract/2018/09/14/second-post.html">read more</a></div>
+</section>
+<section id="fri-20180914-3" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/14/third-post.html">fri_20180914_3</a></h2><p>14 September 2018</p></header><p>Deep Reinforceent Learning for Dialogue Generation (EMNLP 2016)
+
+</p><a href="http://localhost:4000/abstract/2018/09/14/third-post.html">read more</a></div>
+</section>
+<section id="thu-20180913-1" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/13/J.Camacho-ColladosAIJ2016.html">thu_20180913_1</a></h2><p>13 September 2018</p></header><p>NASARI: Integrating explicit knowledge and corpus statistics for a multilingual representation of concepts and entities (AIJ 2016) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/13/J.Camacho-ColladosAIJ2016.html">read more</a></div>
+</section>
+<section id="thu-20180913-2" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/13/S.RotheACL2017.html">thu_20180913_2</a></h2><p>13 September 2018</p></header><p>AutoExtend: Combining Word Embeddings with Semantic Resources (ACL 2017) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/13/S.RotheACL2017.html">read more</a></div>
+</section>
+<section id="thu-20180913-3" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/13/third-post.html">thu_20180913_3</a></h2><p>13 September 2018</p></header><p>Deep contextualized word representations (NAACL 2018) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/13/third-post.html">read more</a></div>
+</section>
+<section id="wed-20180912-1" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/12/first-post.html">wed_20180912_1</a></h2><p>12 September 2018</p></header><p> De-Conflated Semantic Representations (EMNLP 2016) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/12/first-post.html">read more</a></div>
+</section>
+<section id="wed-20180912-2" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/12/second-post.html">wed_20180912_2</a></h2><p>12 September 2018</p></header><p> Neural Word Embedding as Implicit Matrix Factorization (NIPS 2014) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/12/second-post.html">read more</a></div>
+</section>
+<section id="wed-20180912-3" class="shade-two">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/12/third-post.html">wed_20180912_3</a></h2><p>12 September 2018</p></header><p>Mode Regularized Generative Adversarial Networks (ICLR 2017)
+
+</p><a href="http://localhost:4000/abstract/2018/09/12/third-post.html">read more</a></div>
+</section>
+<section id="tue-20180911-1" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/11/first-post.html">tue_20180911_1</a></h2><p>11 September 2018</p></header><p> SENSEMBED: Learning Sense Embeddings for Word and Relational Similarity (IJCNLP 2015) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/11/first-post.html">read more</a></div>
+</section>
+<section id="tue-20180911-2" class="shade-four">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/11/second-post.html">tue_20180911_2</a></h2><p>11 September 2018</p></header><p> Learned in Translation: Contextualized Word Vectors (NIPS 2017) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/11/second-post.html">read more</a></div>
+</section>
+<section id="tue-20180911-3" class="shade-three">
+  <div class="container"><header>
+			<h2><a href="http://localhost:4000/abstract/2018/09/11/third-post.html">tue_20180911_3</a></h2><p>11 September 2018</p></header><p> A Survey of Word Embeddings Evaluation Methods (arXiv 2018) 
+
+</p><a href="http://localhost:4000/abstract/2018/09/11/third-post.html">read more</a></div>
+</section>
+</div>
+<!-- Footer -->
 <div id="footer">
   
   <!-- Copyright -->

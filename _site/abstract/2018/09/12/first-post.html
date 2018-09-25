@@ -1,73 +1,151 @@
-<!DOCTYPE HTML>
-<!--
-Prologue by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-Jekyll integration by Chris Bobbe | chrisbobbe.github.io
--->
-<html><head><!-- Robots -->
-  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/abstract/2018/09/12/first-post.html" /><!-- Title, description, author --><title>wed_20180912_1 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰</title>
-  <meta name="description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
-  <meta name="author" content="Heesoo Harper Park" />
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>wed_20180912_1</title>
+  <meta name="description" content=" De-Conflated Semantic Representations (EMNLP 2016) ">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="wed_20180912_1 | 희수의 연구 노트 - 매일 Abstract 3개씩 읽고 정리 &lt;br/&gt; 매주 1개씩 논문 리뷰" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/images/avatar.jpg" />
-  <meta property="og:url" content="http://localhost:4000/abstract/2018/09/12/first-post.html" />
+  <meta name="author" content="Heesoo Harper Park">
+  <meta name="copyright" content="&copy; Heesoo Harper Park 2018">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content=" De-Conflated Semantic Representations (EMNLP 2016) " />
+  <meta property="og:url" content="http://bencentra.github.io" />
   <meta property="og:site_name" content="희수의 연구 노트" />
-  <meta property="og:description" content="논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다." />
+  <meta property="og:title" content="wed_20180912_1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://bencentra.github.io/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
   
-  <!-- Styles -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js" defer></script><![endif]-->
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
-  <script src="/assets/js/jquery.scrolly.min.js" defer></script>
-  <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
-  <script src="/assets/js/skel.min.js" defer></script>
-  <script src="/assets/js/util.js" defer></script>
-  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
-  <script src="/assets/js/main.js" defer></script>
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="wed_20180912_1">
+  <meta name="twitter:description" content=" De-Conflated Semantic Representations (EMNLP 2016) ">
+  <meta name="twitter:image" content="http://bencentra.github.io/assets/logo.png">
+  <meta name="twitter:url" content="http://bencentra.github.io">
+  
 
-</head><body><!-- Header -->
-<div id="header">
-  <div class="top"><!-- Logo -->
-<div id="logo">
-  <a href="http://localhost:4000/" id="home-link">
-    <span class="image avatar48"><img src="/assets/images/avatar.jpg" alt="Avatar of Heesoo Harper Park" /></span>
-    <h1 id="title">희수의 연구 노트</h1>
-    <p>매일 Abstract 3개씩 읽고 정리 <br/> 매주 1개씩 논문 리뷰</p>
-  </a>
-</div><!-- Nav -->
-<nav id="nav">
-  <ul><li><a href="http://localhost:4000/" id="논문-abstract-읽기-link">
-            <span class="icon fa-pencil-alt">논문 Abstract 읽기</span>
-          </a></li><li><a href="http://localhost:4000/blog1.html" id="논문-분석-link">
-            <span class="icon fa-book">논문 분석</span>
-          </a></li><li><a href="http://localhost:4000/blog2.html" id="dataset-link">
-            <span class="icon fa-book">Dataset</span>
-          </a></li></ul>
-</nav></div>
-  <div class="bottom"><!-- Social Icons -->
-<ul class="icons"><li><a href="mailto:er2357@naver.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://bencentra.github.io/abstract/2018/09/12/first-post.html">
+  <link rel="alternate" type="application/rss+xml" title="희수의 연구 노트" href="http://bencentra.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="희수의 연구 노트">
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">wed_20180912_1</h1>
+      <p class="info">by <strong></strong></p>
+    </header>
+  </div>
 </div>
-</div>
-<!-- Main -->
-<div id="main">
-	<!-- Post -->
-	<article class="shade-two">
-	  <div class="container">
-			<header>
-				<h2>wed_20180912_1</h2>
-				<p>12 September 2018</p>
-			</header><h3> De-Conflated Semantic Representations (EMNLP 2016) </h3>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">September 12, 2018</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/abstract">Abstract</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h3> De-Conflated Semantic Representations (EMNLP 2016) </h3>
 
 <p><b>Mohammad Taher Pilehvar and Nigel Collier  </b> <br />
 Language Technology Lab  <br />
@@ -83,19 +161,321 @@ Cambridge, UK <br />
 기존 방식은 word를 sense 단위로 conflate 했다. 이러한 방법은 sense가 inventory에 mapping 되지 않는 경우가 많다. 이를 다시 de-conflating 하여 해결하였다.
 </p>
 </p>
+
+</article>
+
+
+
+<section class="tags">
+  <strong>Tags:</strong> <a href="/tag/Word_Embedding_Model">Word_Embedding_Model</a>
+</section>
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=wed_20180912_1&u=http%3A%2F%2Fbencentra.github.io%2Fabstract%2F2018%2F09%2F12%2Ffirst-post.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+
+
 </div>
-	</article>
-</div><!-- Footer -->
-<div id="footer">
-  
-  <!-- Copyright -->
-  <ul class="copyright">
-    
-      <li>&copy;희수의 연구 노트. All rights reserved.</li>
-    
-    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
-  </ul>
-  
-</div></body>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">희수의 연구 노트</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:er2357@naver.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">er2357@naver.com</span>
+          </a>
+        </li>
+
+        
+          
+        
+          
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100004717685292" title="Friend me on Facebook">
+              <i class="fa fa-facebook"></i>
+              <span class="username">er2357</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://github.com/righ120" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">righ120</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">논문을 읽고 요약 및 리뷰 정리하는 블로그입니다. 추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
 </html>

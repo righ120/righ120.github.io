@@ -14,13 +14,12 @@ subtitle: 매일 Abstract 3개씩 읽고 정리 <br/> 매주 1개씩 논문 리�
 email: er2357@naver.com
 name: Heesoo Harper Park
 description: >
-  논문을 읽고 요약 및 리뷰 정리하는 블로그입니다.
-  추가적으로 NLP관련 필요한 dataset 정리도 진행 중입니다.
+  논문을 읽고 요약 정리하는 블로그입니다. 더 많은 정보는 개인 홈페이지를 통해 얻으실 수 있습니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.github.io" # the base hostname & protocol for your site
+url: "http://righ120.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -92,12 +91,12 @@ social:
     desc: Fork me on GitHub
     share: true
 
-  - name: LinkedIn
-    icon: linkedin
-    username: 
-    url: 
-    desc: Connect with me on LinkedIn
-    share: false
+  - name: WordPress
+    icon: WordPress
+    username: harperpark
+    url: https://machinereads.com
+    desc: Connect with me on WordPress
+    share: True
 
   - name: Google+
     icon: google-plus

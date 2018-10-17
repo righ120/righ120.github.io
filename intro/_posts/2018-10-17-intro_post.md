@@ -1,5 +1,5 @@
 ---
-title : Topic Aware Neural Response Generation
+title : BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 layout : post
 author : Heesoo Park
 tags : [Seq2Seq]

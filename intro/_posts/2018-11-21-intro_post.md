@@ -1,5 +1,5 @@
 ---
-title : BREAKING THE SOFTMAX BOTTLENECK: A HIGH-RANK RNN LANGUAGE MODEL
+title : BREAKING THE SOFTMAX BOTTLENECK A HIGH-RANK RNN LANGUAGE MODEL
 layout : post
 author : Heesoo Park
 tags : [Language_Modeling]

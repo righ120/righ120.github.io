@@ -1,27 +1,19 @@
 ---
-title : fri_20181123_3
+title : BREAKING THE SOFTMAX BOTTLENECK A HIGH-RANK RNN LANGUAGE MODEL
 layout : post
 author : Heesoo Park
 tags : [Analysis_Neural_Net]
 ---
 
-<h3>BEYOND WORD IMPORTANCE: CONTEXTUAL DECOMPOSITION
-TO EXTRACT INTERACTIONS FROM LSTMS (ICLR 2018)</h3>
+<h3>BREAKING THE SOFTMAX BOTTLENECK: A HIGH-RANK RNN LANGUAGE MODEL (ICLR 2018)</h3>
 
 
 <p>
 
-<b>W. James Murdoch </b><Br/>
-Department of Statistics<br/>
-University of California, Berkeley<br/>
-<em>jmurdoch@berkeley.edu</em><br/><br/>
-<b>Peter J. Liu</b><br/>
-Google Brain<br/>
-Mountain View, CA<br/><br/>
-<b>Bin Yu</b><br/>
-Department of Statistics<br/>
-Department of EECS<br/>
-University of California, Berkeley<br/>
+<b>Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, William W. Cohen</b><Br/>
+School of Computer Science<br/>
+Carnegie Mellon University<br/>
+<em>{zhiliny,dzihang,rsalakhu,wcohen}@cs.cmu.edu</em>
 
 
 </p>

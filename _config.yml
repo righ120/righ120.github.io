@@ -10,11 +10,11 @@ exclude:
 
 # Site settings
 title: 희수의 연구 노트
-subtitle: 매일 Tensorflow 및 파이썬 튜토리얼 리뷰 <br/> 매일 논문 abstract 1편씩 정리
+subtitle: 매일 논문 method 1편씩, abstract 3편씩 정리
 email: er2357@naver.com
-name: Heesoo Harper Park
+name: Heesoo Park
 description: >
-  논문 요약 정리 및 프로그래밍 언어를 공부하는 블로그입니다. 더 많은 정보는 개인 홈페이지를 통해 얻으실 수 있습니다.
+  논문 요약 정리하는 블로그.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
